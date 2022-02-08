@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Project Shopping Cart</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0c259602b6.js" crossorigin="anonymous"></script>
+  <script src="./helpers/fetchItem.js" defer></script>
+  <script src="./helpers/fetchProducts.js" defer></script>
+  <script src="./helpers/saveCartItems.js" defer></script>
+  <script src="./helpers/getSavedCartItems.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container-title">
+      <span class="title"><strong style="color: white;">Trybe</strong>Shopping</span>
+    </div>
+    <section id="containerSearch">
+      <input type="text" id="inputSearch" placeholder="   Buscar produtos, marcas e muito mais..." >
+      <div class="icon-contain">
+      <i class="icon fas fa-search"></i>
+      </div>
+    </section>
+    <i class="cartIcon material-icons" style="font-size:45px;color:#eaebeb">shopping_cart</i>
+    
+  </header>
+  
+  <section class="departament">
+    <ol id='menu-departament'>
+      <li class="allCategory">
+        TODAS AS CATEGORIAS <i class="arrow fas fa-chevron-down"></i>
+        <ul class="category-list">
+          
+        </ul> 
+      </li>
+      <li id="gamer">PC GAMER</li>
+      <li id="jogos">JOGOS</li>
+      <li id="eletro">ELETRÔNICOS</li>
+      <li id="cel">CELULARES</li>
+    </ol>
+  </section>
+
+  <section class="container">
+    <section class="categoryes">
+      <ol id="list-category"></ol>
+    </section>
+    <section class="items"></section>
+    <section class="cart">
+      <div class="container-cartTitle">
+        <span class="cart__title">Meu carrinho</span>
+      </div>
+      <ol class="cart__items"></ol>
+      <div id="price">
+        <p id="subtotal">Subtotal: <span style="font-weight: 600;">R$ </span></p>
+        <p class="total-price"></p>
+      </div>
+      
+      <button class="empty-cart">Esvaziar carrinho</button>
+    </section>
+  </section>
+</body>
+
+</html>
