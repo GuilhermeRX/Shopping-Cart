@@ -11,5 +11,5 @@ Nesse projeto o intuito era desenvolver um carrinho de compras totalmente dinâm
 Durante o desenvolvimento do projeto utilizamos JS ES6, HTML, CSS.
 
 Projeto foi aprovado com 100% dos requisitos cumpridos.
-
+OBS: Neste reposítório foram retirado os arquivos de testes implementados durante o desenvolvimento do projeto.
 
